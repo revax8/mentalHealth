@@ -1,0 +1,7 @@
+/* App Component - Minimal styles, Tailwind handles the rest */
+
+/* Ensure footer stays at bottom with flex layout */
+:host {
+  display: block;
+  min-height: 100vh;
+}

@@ -4,18 +4,18 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-veterinaria-contacto',
+  selector: 'app-psicologo-contacto',
   imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './veterinaria-contacto.component.html',
-  styleUrl: './veterinaria-contacto.component.css'
+  templateUrl: './psicologo-contacto.component.html',
+  styleUrl: './psicologo-contacto.component.css'
 })
-export class VeterinariaContactoComponent implements OnInit {
+export class PsicologoContactoComponent implements OnInit {
   contactForm: FormGroup;
   showNotification = false;
   notificationMessage = '';
   notificationType: 'success' | 'error' = 'success';
 
-  // Configuración del WhatsApp (cambiar por el número real de la veterinaria)
+  // Configuración del WhatsApp (cambiar por el número real del centro de psicología)
   private readonly WHATSAPP_NUMBER = '524622430839'; // Formato: código país + número sin espacios ni símbolos
 
   constructor(private fb: FormBuilder, private route: ActivatedRoute, private cdr: ChangeDetectorRef) {

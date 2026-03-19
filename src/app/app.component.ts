@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
-import { VeterinariaNavbarComponent } from './Components/veterinaria-navbar/veterinaria-navbar.component';
+import { PsicologoNavbarComponent } from './Components/psicologo-navbar/psicologo-navbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, ReactiveFormsModule, VeterinariaNavbarComponent],
+  imports: [CommonModule, RouterOutlet, RouterLink, PsicologoNavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Clinicanimal - Cuidado Veterinario';
+  title = 'Centro de Psicología - Bienestar Mental';
 }

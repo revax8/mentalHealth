@@ -273,16 +273,23 @@
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
 }
 
-
-
 .submit-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
   transform: none;
 }
 
+/* Estilos limpios para botones */
+.submit-btn {
+  border: none;
+  cursor: pointer;
+}
 
+.submit-btn:disabled {
+  cursor: not-allowed;
+}
 
+/* Estilos responsive mejorados */
 
 /* Emergency CTA */
 .emergency-cta {

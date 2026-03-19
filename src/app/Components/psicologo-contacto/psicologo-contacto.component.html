@@ -3,7 +3,7 @@
   <div class="container">
     <h1 class="page-title">Contáctanos</h1>
     <p class="page-subtitle">
-      Estamos aquí para cuidar de tu mascota. Agenda una cita o ponte en contacto con nosotros.
+      Estamos aquí para acompañarte en tu bienestar emocional. Agenda una cita o ponte en contacto con nosotros.
     </p>
   </div>
 </section>
@@ -43,7 +43,7 @@
           </div>
           <div class="info-content">
             <h3>Email</h3>
-            <p>info&#64;clinicanimal.com<br>emergencias&#64;clinicanimal.com</p>
+            <p>info&#64;centropsicologia.com<br>citas&#64;centropsicologia.com</p>
           </div>
         </div>
 
@@ -61,16 +61,16 @@
         <div class="social-media">
           <h3>Síguenos</h3>
           <div class="social-links">
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="Facebook" aria-label="Facebook">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="Instagram" aria-label="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="social-link">
+            <a href="#" class="social-link" title="Twitter" aria-label="Twitter">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#" class="social-link">
+            <a href="https://wa.me/524622430839" class="social-link" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -127,13 +127,13 @@
               formControlName="servicio"
               [class.error]="contactForm.get('servicio')?.invalid && contactForm.get('servicio')?.touched">
               <option value="">Selecciona un servicio</option>
-              <option value="consulta">Consulta Veterinaria</option>
-              <option value="vacunacion">Vacunación</option>
-              <option value="cirugia">Cirugía</option>
-              <option value="diagnostico">Diagnóstico por Imagen</option>
-              <option value="estetica">Estética y Peluquería</option>
-              <option value="hospitalizacion">Hospitalización</option>
-              <option value="emergencia">Emergencia</option>
+              <option value="individual">Terapia Individual</option>
+              <option value="pareja">Terapia de Pareja</option>
+              <option value="cognitiva">Terapia Cognitivo-Conductual</option>
+              <option value="talleres">Talleres Grupales</option>
+              <option value="infantil">Terapia Infantil</option>
+              <option value="mindfulness">Mindfulness y Relajación</option>
+              <option value="consulta">Consulta Inicial</option>
             </select>
             <span class="error-message" *ngIf="getErrorMessage('servicio')">
               {{ getErrorMessage('servicio') }}
@@ -146,7 +146,7 @@
               id="mensaje" 
               formControlName="mensaje"
               [class.error]="contactForm.get('mensaje')?.invalid && contactForm.get('mensaje')?.touched"
-              placeholder="Cuéntanos sobre tu mascota y el motivo de la consulta..."
+              placeholder="Cuéntanos cómo podemos ayudarte..."
               rows="4"></textarea>
             <span class="error-message" *ngIf="getErrorMessage('mensaje')">
               {{ getErrorMessage('mensaje') }}
@@ -156,12 +156,11 @@
           <div class="form-actions">
             <button 
               type="submit" 
-              class="submit-btn whatsapp-btn"
+              class="submit-btn bg-green-500 hover:bg-green-600 disabled:bg-gray-400 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center space-x-3 w-full disabled:transform-none disabled:shadow-lg"
               [disabled]="contactForm.invalid">
-              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-whatsapp text-xl"></i>
               <span>Enviar por WhatsApp</span>
             </button>
-            
           </div>
           
         </form>
@@ -178,12 +177,12 @@
         <i class="fas fa-exclamation-triangle"></i>
       </div>
       <div class="emergency-text">
-        <h2>¿Es una Emergencia?</h2>
-        <p>Si tu mascota necesita atención médica urgente, no dudes en llamarnos inmediatamente.</p>
+        <h2>¿Necesitas Atención Urgente?</h2>
+        <p>Si necesitas apoyo psicológico inmediato o tienes pensamientos de autolesión, no dudes en contactarnos inmediatamente.</p>
       </div>
-      <a href="tel:+524622430839" class="emergency-btn">
-        <i class="fas fa-phone"></i>
-        Llamar Ahora: (462) 243-0839
+      <a href="tel:+524622430839" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 flex items-center space-x-3 animate-pulse">
+        <i class="fas fa-phone text-lg"></i>
+        <span>Llamar Ahora: (462) 243-0839</span>
       </a>
     </div>
   </div>

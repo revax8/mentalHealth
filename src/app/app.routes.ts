@@ -1,20 +1,20 @@
 import { Routes } from '@angular/router';
-import { VeterinariaHomeComponent } from './Components/veterinaria-home/veterinaria-home.component';
-import { VeterinariaServiciosComponent } from './Components/veterinaria-servicios/veterinaria-servicios.component';
-import { VeterinariaContactoComponent } from './Components/veterinaria-contacto/veterinaria-contacto.component';
+import { CentroBienestarComponent } from './Components/centro-bienestar/centro-bienestar.component';
+import { PsicologoServiciosComponent } from './Components/psicologo-servicios/psicologo-servicios.component';
+import { PsicologoContactoComponent } from './Components/psicologo-contacto/psicologo-contacto.component';
 
 export const routes: Routes = [
   {
     path: '', 
-    component: VeterinariaHomeComponent
+    component: CentroBienestarComponent
   },
   {
     path: 'servicios', 
-    component: VeterinariaServiciosComponent
+    component: PsicologoServiciosComponent
   },
   {
     path: 'contacto', 
-    component: VeterinariaContactoComponent
+    component: PsicologoContactoComponent
   },
   {
     path: '**', 

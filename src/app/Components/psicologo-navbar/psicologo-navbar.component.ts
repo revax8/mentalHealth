@@ -3,13 +3,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-veterinaria-navbar',
+  selector: 'app-psicologo-navbar',
   imports: [RouterLink, RouterLinkActive, CommonModule],
-  templateUrl: './veterinaria-navbar.component.html',
-  styleUrl: './veterinaria-navbar.component.css',
+  templateUrl: './psicologo-navbar.component.html',
+  styleUrl: './psicologo-navbar.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class VeterinariaNavbarComponent {
+export class PsicologoNavbarComponent {
   isMenuOpen = false;
 
   toggleMenu() {

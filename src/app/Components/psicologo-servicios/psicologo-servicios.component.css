@@ -65,7 +65,7 @@
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   background: white;
 }
@@ -193,6 +193,31 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Estilos modernos para botones mejorados */
+.emergency-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+  border: 2px solid transparent;
+  min-width: 250px;
+  justify-content: center;
+}
+
+.emergency-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(239, 68, 68, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
 /* Process Section */
 .process-section {
   padding: 80px 0;
@@ -275,6 +300,26 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.cta-buttons a {
+  position: relative;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+  border: 2px solid transparent;
+  min-width: 200px;
+  text-align: center;
+}
+
+.cta-buttons a:hover {
+  transform: translateY(-2px);
 }
 
 .btn {
@@ -308,6 +353,35 @@
   background: white;
   color: #3b82f6;
   transform: translateY(-2px);
+}
+
+/* Animaciones para botones */
+@keyframes buttonPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes emergencyPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+}
+
+.emergency-btn {
+  animation: emergencyPulse 2s infinite;
+}
+
+/* Smooth transitions */
+.service-card,
+a {
+  transition: all 0.3s ease;
 }
 
 /* Responsive */
@@ -348,5 +422,17 @@
 
   .container {
     padding: 0 1rem;
+  }
+  
+  .cta-buttons a {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .emergency-btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.9rem;
+    padding: 0.875rem 1.5rem;
   }
 }
