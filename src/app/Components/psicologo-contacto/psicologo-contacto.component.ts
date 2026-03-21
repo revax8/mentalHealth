@@ -16,7 +16,7 @@ export class PsicologoContactoComponent implements OnInit {
   notificationType: 'success' | 'error' = 'success';
 
   // Configuración del WhatsApp (cambiar por el número real del centro de psicología)
-  private readonly WHATSAPP_NUMBER = '524622430839'; // Formato: código país + número sin espacios ni símbolos
+  private readonly WHATSAPP_NUMBER = '524622490255'; // Formato: código país + número sin espacios ni símbolos
 
   constructor(private fb: FormBuilder, private route: ActivatedRoute, private cdr: ChangeDetectorRef) {
     this.contactForm = this.fb.group({

@@ -10,5 +10,5 @@ import { PsicologoNavbarComponent } from './Components/psicologo-navbar/psicolog
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Centro de Psicología - Bienestar Mental';
+  title = 'PsicoSalud - Bienestar Mental';
 }
