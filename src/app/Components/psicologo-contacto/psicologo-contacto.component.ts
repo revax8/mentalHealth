@@ -145,7 +145,7 @@ export class PsicologoContactoComponent implements OnInit {
   private crearMensajeWhatsApp(datos: any): string {
     const servicioTexto = this.obtenerTextoServicio(datos.servicio);
     
-    return `🐾 *SOLICITUD DE CITA - CLINICANIMAL* 🐾
+    return `🐾 *SOLICITUD DE CITA* 🐾
 
 👤 *Cliente:* ${datos.nombre}
 📧 *Email:* ${datos.email}
@@ -156,7 +156,7 @@ export class PsicologoContactoComponent implements OnInit {
 ${datos.mensaje}
 
 ---
-_Enviado desde la página web de Clinicanimal_`;
+_Enviado desde la página web de PsicoSalud`;
   }
 
   private obtenerTextoServicio(valor: string): string {
